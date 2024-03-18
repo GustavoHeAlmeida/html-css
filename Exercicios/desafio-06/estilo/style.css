@@ -7,12 +7,13 @@
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
-    --fonte3: 'Spricha', cursive; 
+    --fonte3: 'Sriracha', cursive;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -22,7 +23,7 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background-image: linear-gradient(to top, black,  rgb(150, 150, 150));
     color: white;
     text-align: center;
 }
@@ -37,7 +38,6 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
-    font-size: 17px;
 }
 
 a {
@@ -52,19 +52,19 @@ header a:hover, footer a:hover {
 
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     padding-left: 30px;
     line-height: 2em;
-    font-family: var(--fonte3);
     font-size: 3.5vw;
 }
 
 section > pre {
     white-space: pre-line;
+    font-family: var(--fonte3);
 }
 
-section > p {
+section > pre > p {
     padding-bottom: 2em;
 }
 
@@ -74,18 +74,32 @@ section.normal {
 }
 
 section.imagem {
-    
+    background-color: rgb(51, 51, 51);
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 section.imagem > pre > p {
-    width: 400px;
-    background-color: black;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
 }
