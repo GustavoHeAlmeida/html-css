@@ -12,6 +12,7 @@
        table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
        }
 
        caption {
@@ -21,6 +22,12 @@
         background-color: lightgray;
        }
 
+       thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: #383838;
+       }
+
        td, th {
         border: 1px solid black;
         text-align: center;
@@ -28,7 +35,7 @@
        }
 
        thead, tfoot {
-        background-color: rgba(0, 0, 0, 0.76);
+        background-color: #383838;
         color: white;
        }
 
