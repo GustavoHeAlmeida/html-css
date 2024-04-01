@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgba(169, 169, 169, 0.863);
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th {
+            font-weight: bolder;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Naftaly Oliveira</td>
+                <td>Luna em busca da verdade</td>
+                <td>Invocação do mal 2</td>
+                <td>Enrolados</td>
+            </tr>
+            <tr>
+                <td>Patricia de Almeida</td>
+                <td>A múmia</td>
+                <td>Abracadabra</td>
+                <td>Convenção das Bruxas</td>
+            </tr>
+            <tr>
+                <td>Aryadne Luisa</td>
+                <td>Velozes e furiosos</td>
+                <td>Invocação do mal 1</td>
+                <td>Divergente</td>
+            </tr>
+            <tr>
+                <th  rowspan="3" scope="rowgroup">Homens</th>
+                <td>Gustavo Henrique</td>
+                <td>Interestelar</td>
+                <td>Gente Grande</td>
+                <td>Pixels</td>
+            </tr>
+            <tr>
+                <td>Nayron Oliveira</td>
+                <td>Anaconda</td>
+                <td>Minha mãe é uma peça</td>
+                <td>13° Distrito</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
